@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>SCSS</title>
+</head>
+<body class="site-body">
+   <header class = "site-header">
+       <div class="site-header__blackout blackout"></div>
+       <nav class="site-header__nav">
+           <!-- zagnieżdzony blok -->
+        <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="#start">Start</a></li>
+            <li class="nav__item"><a class="nav__link" href="#menu">Menu`</a></li>
+            <li class="nav__item"><a class="nav__link" href="#lokalizacja">Lokalizacja</a></li>
+            <li class="nav__item"><a class="nav__link" href="#kontakt">Kontakt</a></li>
+        </ul>
+       </nav>
+       <h1 class = "site-header__h1 heading heading--h1">Restauracja Dolce Vita</h1>
+       <a class="site-header__button btn btn--red btn--circle"href="#menu"> Menu</a>
+   </header>
+   <div class="site-body__social social">
+        <div class="social__item social__item--twitter"></div>
+        <div class="social__item social__item--youtube"></div>
+        <div class="social__item social__item--in"></div>
+        <div class="social__item social__item--facebook"></div>
+   </div>
+   <main>
+       <section class="site-section" id="start">
+           <h2 class="heading heading--h2">Start</h2>
+           <div class="container">
+               <div class="row">
+                   <div class="col">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquid voluptates aut repellat deleniti accusamus voluptate expedita ea. Esse cupiditate ad omnis beatae ut incidunt architecto dolor nemo quam ipsam, quas inventore vitae necessitatibus cumque, aperiam porro. Similique cumque hic, fugit neque odit deserunt rem veniam labore minima fugiat autem repellat in. Corrupti animi dolore officiis illum aut odio cumque voluptates nisi obcaecati veniam! Atque aliquam alias nisi saepe. Omnis culpa cupiditate dicta facere, atque esse nihil eius beatae veritatis. Eligendi odio excepturi delectus dolor, molestiae velit, cum modi architecto at inventore adipisci consectetur quo soluta laborum neque. Facilis autem illo corrupti nulla voluptatem quasi sunt omnis tenetur voluptas eaque! Eligendi maxime aperiam commodi quam laborum atque, quibusdam quos ut, cumque maiores numquam. Harum dolore magnam pariatur praesentium, temporibus earum possimus. Fugit culpa molestias ex perspiciatis perferendis ratione illum, incidunt odio nemo exercitationem iusto ducimus repudiandae hic cupiditate, blanditiis itaque!</p>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <section class="site-section site-section--bg-color" id="menu">
+        <h2 class="heading heading--h2 text-color-white">Menu</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col col--md50 col--lg25">
+                    <!-- blok wg BEM -->
+                    <div class="image-box">
+                        <div class="image-box__image image-box__image--next"></div>
+                        <div class="image-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+                <div class="col col--md50 col--lg25">
+                    <!-- blok wg BEM -->
+                    <div class="image-box">
+                        <div class="image-box__image"></div>
+                        <div class="image-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+                <div class="col col--md50 col--lg25">
+                    <!-- blok wg BEM -->
+                    <div class="image-box">
+                        <div class="image-box__image image-box__image--next"></div>
+                        <div class="image-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+                <div class="col col--md50 col--lg25">
+                    <!-- blok wg BEM -->
+                    <div class="image-box">
+                        <div class="image-box__image"></div>
+                        <div class="image-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+       <section class="site-section" id="lokalizacja">
+           <h2 class="heading heading--h2">Lokalizacja</h2>
+           <div class="container">
+               <div class="row">
+                   <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.0689569188735!2d19.94092781586989!3d50.066270222852864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b1aa3e418c3%3A0x61caab5b1033da73!2sZacisze%208%2C%2031-156%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1607251387700!5m2!1spl!2spl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <section class="site-section site-contact" id="kontakt">
+           <div class="site-contact__blackout blackout"></div>
+           <h2 class="site-contact__h2 heading heading--h2">Kontakt</h2>
+           <div class="container">
+               <div class="row">
+                   <div class="col">
+                       <form class="site-contact__form form">
+                           <label class="form__label" for="mail">Podaj Twój e-mail</label><br>
+                           <input class="form__item" id="mail"><br>
+                           <label class="form__label" for="subject">Podaj temat wiadomości</label><br>
+                           <input class="form__item" id="subject"><br>
+                           <label class="form__label" for="message">Podaj treść wiadomości</label><br>
+                           <textarea class="form__item" name="" id="message" cols="15" rows="10"></textarea><br>
+                            <input class="form__item btn btn--outline" type="submit" value="Wyślij">
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </section>
+   </main>
+   <footer class="site-footer">
+       <div class="container">
+           <div class="row">
+               <div class="col col--md33">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae alias dolor doloremque qui dolore ducimus, laudantium quia expedita commodi consequatur quae odit deserunt molestias! Consequuntur.</p>   
+               </div>
+               <div class="col col--md33">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae alias dolor doloremque qui dolore ducimus, laudantium quia expedita commodi consequatur quae odit deserunt molestias! Consequuntur.</p>   
+               </div>
+               <div class="col col--md33">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae alias dolor doloremque qui dolore ducimus, laudantium quia expedita commodi consequatur quae odit deserunt molestias! Consequuntur.</p>   
+               </div>
+        </div>
+       </div>
+   </footer>
+</body>
+</html>

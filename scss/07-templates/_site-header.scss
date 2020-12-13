@@ -1,0 +1,33 @@
+.site-header { 
+    font-family: 'Italianno', cursive;
+    height: 100vh;
+    background: url(../assets/img/start.jpeg);
+    background-attachment: fixed;
+    position: relative;
+    &__blackout{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    &__button {
+         position: absolute;
+         bottom: 15%;
+         margin: 0 auto;
+         left: 0;
+         right: 0;
+    }
+    &__h1{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 40%;
+    }
+    &__nav{
+        position: absolute;
+        width: 60%;
+        text-align: center;
+        margin-top: 3 * $grid-base;
+    }
+    
+
+}

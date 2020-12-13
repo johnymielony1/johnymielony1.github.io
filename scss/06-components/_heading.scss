@@ -1,0 +1,19 @@
+.heading {
+    text-align: center;
+    font-family: Italianno, cursive;
+    width: 100%;
+
+    &--h1{
+        color: $color-white;
+        font-size: 6 * $font-base;
+        @include medium {
+            font-size: 8 * $font-base; 
+        }
+        @include large {
+            font-size: 10 * $font-base; 
+        }
+    }
+    &--h2 { 
+        font-size: 5 * $font-base;
+    }
+}
