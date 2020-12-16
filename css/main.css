@@ -143,6 +143,8 @@ p {
         font-size: 100px; } }
   .heading--h2 {
     font-size: 50px; }
+  .heading--h3 {
+    font-size: 40px; }
 
 .btn {
   color: #eff0f3;
@@ -173,6 +175,12 @@ p {
     height: 100px;
     line-height: 100px;
     padding: 0; }
+  .btn--brown {
+    background-color: #5d2d2d;
+    font-size: 15px;
+    width: 100px; }
+    .btn--brown:hover {
+      background-color: #3b1c1c; }
 
 .image-box {
   border-radius: .6rem;
@@ -295,10 +303,15 @@ p {
     margin-top: 30px; }
 
 .site-section {
-  min-height: 70vh;
+  min-height: 50vh;
   padding-top: 3rem; }
   .site-section--bg-color {
     background-color: #504533; }
+  .site-section--article-bg-color {
+    background-color: #cfcfce;
+    min-height: 40vh; }
+  .site-section__button {
+    float: right; }
 
 .site-contact {
   background: url("../assets/img/contact.jpeg") center/cover no-repeat;

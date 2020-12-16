@@ -1,8 +1,15 @@
 .site-section { 
-    min-height: 70vh; 
+    min-height: 50vh; 
     padding-top: 3rem;
 
     &--bg-color {
         background-color: $color-bg-section;
+    }
+    &--article-bg-color{ 
+        background-color: $color-bg-section-article;
+        min-height: 40vh; 
+    }
+    &__button{ 
+        float:right;
     }
 }
